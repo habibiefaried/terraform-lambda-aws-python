@@ -1,8 +1,6 @@
-import logging
-
 def app(event, context): 
-    logging.basicConfig(level = logging.INFO)
-    logger = logging.getLogger()
-    logger.info("Python for the win!")
+    print('## ENVIRONMENT VARIABLES')
+    print(os.environ)
+    print('## EVENT')
     
     return "Hello World"
